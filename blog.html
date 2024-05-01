@@ -10,7 +10,7 @@ title: Blog
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/assets/css/styles.scss">
+    <link rel="stylesheet" href="{{ "/assets/css/styles.scss" | relative_url }}"">
   </head>
   <body>
   </body>
@@ -20,7 +20,7 @@ title: Blog
 <ul>
   {% for post in site.posts %}
     <li>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <h2><a href="{{ post.url | relative_url}}">{{ post.title }}</a></h2>
       {{ post.excerpt }}
     </li>
   {% endfor %}
