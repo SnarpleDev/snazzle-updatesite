@@ -13,13 +13,13 @@ title: "Latest posts from SnarpleDev"
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
-    <ul>
-      {% for post in site.posts %}
-        <li>
-          <h2><a href="{{ post.url | relative_url}}">{{ post.title }}</a></h2>
-          {{ post.excerpt }}
-        </li>
-      {% endfor %}
-    </ul>
   </body>
 </html>
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <h2><a href="{{ post.url | relative_url}}">{{ post.title }}</a></h2>
+      {{ post.excerpt }}
+    </li>
+  {% endfor %}
+</ul>
