@@ -1,0 +1,1 @@
+// Empty tailwind config file for activating highlight
